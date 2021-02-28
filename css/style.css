@@ -1,0 +1,218 @@
+/**************************************
+Font Style
+***************************************/
+
+@font-face{
+  font-family: serif, sans-serif;
+  src : local('serif'),
+        local('sans-serif')
+
+}
+
+/**************************************
+Base Style
+***************************************/
+
+body{
+  box-sizing: border-box;
+  font-family: serif;
+  font-size: 16px;
+  background-color: #fefeff;
+}
+
+header{
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 3%;
+
+}
+
+h1{
+  font-weight: 500;
+  line-height: 50px;
+}
+
+/**************************************
+Main Style
+***************************************/
+
+main{
+  display: flex;
+  flex-direction: column;
+
+
+ 
+}
+
+.wrapper{
+  border-top: 2px solid #bebebe;
+  padding: 5% 0 ;
+  max-width: 400px;
+  align-self: center;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+h3{
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #797979;
+  margin-bottom: 5px;
+}
+
+p{
+  margin: 0 0 15px;
+  color: #8f8f8f;
+}
+
+img{
+  width: 100%;
+  border-radius: 3%;
+}
+
+/**************************************
+Media Queries
+***************************************/
+
+
+@media only screen and (min-width:540px){
+  
+    header{
+      font-size: 1.9rem;
+    }
+
+    h2{
+      font-size: 2.7rem;
+    } 
+
+}
+
+
+/* Attribute Selectors ------------- */
+
+.form-contact{
+
+  padding: 20px 24px;
+   background:#f4f7f8;
+ }
+ 
+ 
+ #container{
+   max-width: 500px;
+   margin: auto;
+ }
+ 
+ 
+ /*Attribute Selector is the same same the selector above
+ 
+ form[class="form-contact"]{
+ 
+  padding: 20px 24px;
+   background:#f4f7f8;
+ }
+ 
+ 
+ div[id="container"]{
+   max-width: 500px;
+   margin: auto;
+ }*/
+ 
+ 
+ input[placeholder]{
+   background:#fdfee6;
+ }
+ 
+ a[target="_blank"]{
+   color:#39add1;
+   text-decoration:none;
+   border-bottom: 1px dotted;
+ }
+ 
+ 
+ 
+ 
+ /* DRY CLasses ------------- */
+ 
+ .br{
+   border-radius:.5em;
+ }
+ 
+ .avatar{
+   display:block;
+   margin:0 auto 2em;
+ }
+ 
+ .rounded{
+   border-radius:50%;
+ }
+ 
+ 
+ .btn{
+     cursor:pointer;
+   font-size:.875em;
+   font-weight:400;
+   color:#fff;
+   padding-left:20px;
+   padding-right:20px;
+   text-transform:uppercase;
+ 
+ }
+ 
+ 
+ 
+ 
+ .btn:hover{
+   opacity:.75;
+ }
+ 
+ .default{
+   background-color:#52bab3;
+ }
+ 
+ .error{
+   background-color:#ff784f;
+ }
+ 
+ 
+ @media (min-width:769px){
+   .inln{
+     width:auto;
+     display:inline-block;
+     }
+ 
+ /*The Adjacent sibling combinator (targets immediate siblings)*/
+ 
+   .btn + .btn{
+     
+     margin-left: 20px;
+   
+   }
+ }
+ 
+ 
+ 
+ /*Combinators ------------- */
+ 
+ /*Direct child selector*/
+ form > a{
+   font-size:.7em;
+ }
+ 
+ 
+ 
+ 
+ 
+ /*General child selector (targets all the specified siblings that follow an element)*/
+ 
+ h1 ~ label{
+   background:tomato;
+   color:white;
+   padding:5px;
+ }
+ 
+ 
